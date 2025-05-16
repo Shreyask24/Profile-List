@@ -1,12 +1,54 @@
-# React + Vite
+# 🌍 Profile Viewer App with Map Integration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based profile management app that allows users to:
 
-Currently, two official plugins are available:
+- Add, edit, and delete profiles (Admin Dashboard)
+- View profiles and their locations on an interactive map
+- Search and filter profiles by name or location
+- Navigate to individual profile detail pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with **React**, **Redux Toolkit**, **Formik**, **Leaflet**, and **Tailwind CSS**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+### 🧑 Profile Management (Admin Dashboard)
+- Add a new profile with details (name, photo, address, coordinates)
+- Edit or delete existing profiles
+- All data is stored in **Redux state**
+
+### 🗺️ Interactive Map
+- View a selected profile’s location on a Leaflet map
+- Marker shows name and address
+
+### 🔍 Search and Filter
+- Search by name
+- Filter by location/address
+- Instant filtering using controlled input fields
+
+### 🧭 Navigation
+- Click “Details” to navigate to a profile-specific page using **React Router**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Description                           |
+|------------------|---------------------------------------|
+| React            | Frontend UI framework                 |
+| Redux Toolkit    | State management                      |
+| Formik           | Form handling for Admin dashboard     |
+| Leaflet & React-Leaflet | Map and location rendering    |
+| Tailwind CSS     | Utility-first CSS framework           |
+| React Router     | Client-side routing                   |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/profile-map-viewer.git
+cd profile-map-viewer
+npm install
+npm start
